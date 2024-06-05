@@ -1,0 +1,13 @@
+.product{
+    animation: 40s slide linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-815%);
+    }
+}
