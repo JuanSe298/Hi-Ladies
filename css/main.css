@@ -50,6 +50,7 @@ main{
                 height: 100%;
                 color: white;
                 backdrop-filter: blur(3px);
+                z-index: 0;
             }
         }
     }

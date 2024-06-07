@@ -1,0 +1,63 @@
+footer{
+    width: 100vw;
+    background-color: palevioletred;
+    display: flex;
+    padding: 0 10%;
+    list-style: none;
+    gap: 20%;
+    height: 20vh;
+    #social-networks{
+        #social-networks-space{
+            display: flex;
+            gap: 10%;
+            padding: 3px 30% 0 0;
+            a{
+                img{
+                    height: 40px;
+                }
+            }
+        }
+        #social-networks-title{
+            gap: 0;
+            display: flex;
+            b{
+                display: flex;
+                align-items: center;
+            }
+            .svg{
+                width: 7%;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    #about-us{
+        width: 33vw;
+        ul{
+            list-style: none;
+            .about-us-li{
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+
+            }
+        }
+        #about-us-title{
+            display: flex;
+            b{
+                min-width: 70%;
+                min-height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            svg{
+                height: 100%;
+                width: 60%;
+                margin-left: 3px;
+            }
+        }
+    }
+}
