@@ -1,8 +1,9 @@
 footer{
+    margin-top: 10vh;
     width: 100vw;
     background-color: palevioletred;
     display: flex;
-    padding: 0 10%;
+    padding: 2vh 10% 0 10%;
     list-style: none;
     gap: 20%;
     height: 20vh;
@@ -48,14 +49,14 @@ footer{
         #about-us-title{
             display: flex;
             b{
-                min-width: 70%;
+                min-width: 60%;
                 min-height: 100%;
                 display: flex;
                 align-items: center;
             }
             svg{
                 height: 100%;
-                width: 60%;
+                width: 40%;
                 margin-left: 3px;
             }
         }
