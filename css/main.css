@@ -31,29 +31,42 @@ main{
         }
     }
     .init-catalogue{
-        width: 100%;
-        height:65vh;
+        margin-top: 5vh;
+        padding: 0 0.5vw;
+        width: 100vw;
+        height:83vh;
         display: flex;
-        overflow-x: hidden;
-        .product{
-            min-height: 100%;
-            min-width: 33.334%;
-            margin: 0 0.2%;
-            border-radius: 10px;
-            overflow: hidden;
-            .product-image-placeholder{
-                display: flex;
-                align-items: center;
-                height: 75%;
-                img{
-                    width: 100%;
-                    height: 100%;
+        overflow: hidden;
+        flex-direction: column;
+        .init-catalogue-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+        .products-container{
+            width: 100%;
+            display: flex;
+            .product{
+                min-height: 100%;
+                min-width: 30%;
+                margin: 0 0.5%;
+                border-radius: 10px;
+                overflow: hidden;
+                .product-image-placeholder{
+                    display: flex;
+                    align-items: center;
+                    height: 73%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
-            }
-            .product-description{
-                min-height: 25%;
-                padding: 5px 5px;
-                background-color: rgb(245, 227, 244);
+                .product-description{
+                    min-height: 25%;
+                    padding: 5px 5px;
+                    background-color: rgb(245, 227, 244);
+                }
             }
         }
     }
@@ -75,6 +88,7 @@ main{
             align-items: center;
             justify-content: center;
             .categorie{
+                cursor: pointer;
                 width: 30%;
                 height: 85vh;
                 .categorie-image-placeholder{
@@ -93,6 +107,10 @@ main{
                 padding: 5%;
             }
         }
+    }
+    .categorie:hover{
+        transform: scale(1.01);
+        transition: all 300ms;
     }
 }
 
