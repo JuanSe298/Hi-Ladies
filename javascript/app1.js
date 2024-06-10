@@ -6,10 +6,10 @@ const $catalogo = $init_text[1];
 
 $inicio.addEventListener("click",function(event){
     event.preventDefault();
-    document.location.href = "../proyecto%20final/index.html#main"
+    document.location.href = "./index.html#main"
 });
 
 $catalogo.addEventListener("click", function(event){
     event.preventDefault();
-    window.location.href = "../proyecto%20final/html/catalogue.html";
+    window.location.href = "./html/catalogue.html";
 })
