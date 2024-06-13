@@ -13,3 +13,10 @@ $catalogo.addEventListener("click", function(event){
     event.preventDefault();
     window.location.href = "../catalogue.html";
 })
+
+
+const $flecha = document.querySelector(".svgback")
+$flecha.addEventListener("click", function(event){
+    event.preventDefault();
+    window.history.go(-1)
+}) 
