@@ -104,6 +104,7 @@ main {
             .categorie {
                 position: relative;
                 cursor: pointer;
+                overflow: hidden;
 
                 .categorie-image-placeholder {
                     width: 100%;
@@ -422,12 +423,12 @@ main {
 
             #categories-placeholder-div-two {
                 flex-wrap: wrap;
-                gap: 3%;
-                row-gap: 3vw;
+                gap: 2%;
+                row-gap: 2vw;
 
                 .categorie {
-                    width: 40%;
-                    height: 25vh;
+                    width: 47%;
+                    height: 32vh;
 
                     .categorie-description {
                         bottom: 0;
