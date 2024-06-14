@@ -227,8 +227,9 @@ main {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1000px) {    
     main {
+
         #promcard-placeholder {
             ul {
                 li {
@@ -325,7 +326,8 @@ main {
         .init-catalogue {
             margin-top: 1vh;
             padding: 0 3vw;
-            height: 30vh;
+            min-height: 30%;
+            background-color: aqua;
 
             .init-catalogue-title {
                 min-height: 6vh;
@@ -333,15 +335,16 @@ main {
 
             .products-container {
                 animation: 40s slide2 linear infinite;
-
+                height: 25vh;
                 .product {
-                    min-width: 45%;
-                    max-width: 45%;
-                    height: 22vh;
+                    height: 100%;
+                    min-width: 50%;
+                    max-width: 50%;
                     margin: 0 0.5%;
                     border-radius: 10px;
 
                     .product-description {
+                        height: 27%;
                         display: flex;
                         flex-wrap: wrap;
                         font-size: 0.8rem;
