@@ -72,7 +72,8 @@ main {
                     font-size: 0.8rem;
                     min-height: 25%;
                     background-color: rgb(235, 222, 235);
-                    .price{
+
+                    .price {
                         font-size: 1.2em;
                         font-weight: bold;
                     }
@@ -82,7 +83,6 @@ main {
     }
 
     #categories-placeholder {
-        margin-top: 7vh;
         display: flex;
         flex-direction: column;
 
@@ -91,36 +91,32 @@ main {
             flex-direction: column;
             align-items: center;
             width: 100vw;
-            margin: 2vh 0;
         }
 
         #categories-placeholder-div-two {
+            height: auto;
             width: 100vw;
             display: flex;
-            gap: 3%;
             align-items: center;
             justify-content: center;
 
+
             .categorie {
+                position: relative;
                 cursor: pointer;
-                width: 30%;
-                height: 85vh;
 
                 .categorie-image-placeholder {
                     width: 100%;
                     height: 100%;
                 }
-            }
 
-            .categorie-description {
-                position: relative;
-                z-index: 10;
-                bottom: 15.7%;
-                backdrop-filter: blur(2px);
-                color: white;
-                background-color: rgba(58, 31, 71, 0.384);
-                height: 15%;
-                padding: 5%;
+                .categorie-description {
+                    width: 100%;
+                    position: absolute;
+                    backdrop-filter: blur(2px);
+                    color: white;
+                    background-color: rgba(58, 31, 71, 0.384);
+                }
             }
         }
     }
@@ -215,7 +211,8 @@ main {
                         position: relative;
                         font-size: 1rem;
                         padding: 5px 5px;
-                        .price{
+
+                        .price {
                             position: absolute;
                             top: 5px;
                             right: 5px;
@@ -224,10 +221,33 @@ main {
                 }
             }
         }
+
+        #categories-placeholder {
+            margin-top: 7vh;
+
+            #categories-placeholder-div-one {
+                margin: 0 0 2vh 0;
+            }
+
+            #categories-placeholder-div-two {
+                gap: 3%;
+
+                .categorie {
+                    width: 30%;
+                    height: 85vh;
+
+                    .categorie-description {
+                        bottom: 0;
+                        height: 15.7%;
+                        padding: 5%;
+                    }
+                }
+            }
+        }
     }
 }
 
-@media(max-width: 1000px) {    
+@media(max-width: 1000px) {
     main {
 
         #promcard-placeholder {
@@ -259,11 +279,14 @@ main {
         .init-catalogue {
             height: 33vh;
             margin-top: 1vh;
-            .init-catalogue-title{
+
+            .init-catalogue-title {
                 height: 4vh;
             }
+
             .products-container {
                 animation: 40s slide3 linear infinite;
+
                 .product {
                     min-width: 37%;
                     max-width: 37%;
@@ -281,6 +304,32 @@ main {
                             position: absolute;
                             align-self: flex-end;
                         }
+                    }
+                }
+            }
+        }
+
+        #categories-placeholder {
+            margin-top: 2vh;
+
+            #categories-placeholder-div-one {
+                margin: 0 0 1vh 0;
+            }
+
+            #categories-placeholder-div-two {
+                height: auto;
+                flex-wrap: wrap;
+                gap: 3%;
+                row-gap: 3vw;
+
+                .categorie {
+                    width: 40%;
+                    height: 37vh;
+
+                    .categorie-description {
+                        bottom: 0;
+                        height: 15.7%;
+                        padding: 5%;
                     }
                 }
             }
@@ -327,6 +376,7 @@ main {
             margin-top: 1vh;
             padding: 0 3vw;
             min-height: 30%;
+
             .init-catalogue-title {
                 min-height: 6vh;
             }
@@ -334,6 +384,7 @@ main {
             .products-container {
                 animation: 40s slide2 linear infinite;
                 height: 25vh;
+
                 .product {
                     height: 100%;
                     min-width: 50%;
@@ -349,10 +400,12 @@ main {
                         padding: 2px 5px;
                         justify-content: space-between;
 
-                        .material,.description {
+                        .material,
+                        .description {
                             display: none;
                         }
-                        .price{
+
+                        .price {
                             font-size: 1.1em;
                         }
                     }
@@ -360,34 +413,30 @@ main {
             }
         }
 
+        #categories-placeholder {
+            margin-top: 2vh;
 
-    }
-}
+            #categories-placeholder-div-one {
+                margin: 0 0 1vh 0;
+            }
 
+            #categories-placeholder-div-two {
+                flex-wrap: wrap;
+                gap: 3%;
+                row-gap: 3vw;
 
+                .categorie {
+                    width: 40%;
+                    height: 25vh;
 
-
-
-/* .products-container {
-    animation: 40s slide3 linear infinite;
-
-    .product {
-        min-width: 37%;
-        max-width: 37%;
-        height: 33vh;
-        margin: 0 0.5%;
-        border-radius: 10px;
-
-        .product-description {
-            position: relative;
-            display: flex;
-            padding: 7px 7px;
-            flex-direction: column;
-
-            .price {
-                position: absolute;
-                align-self: flex-end;
+                    .categorie-description {
+                        bottom: 0;
+                        height: 25%;
+                        padding: 5%;
+                        font-size: 0.8em;
+                    }
+                }
             }
         }
     }
-} */
+}
