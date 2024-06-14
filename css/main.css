@@ -1,24 +1,31 @@
-main{
+main {
     width: 100vw;
-    min-height: 90vh;     /* ajustar */
-    #promcard-placeholder{
+    min-height: 90vh;
+
+    /* ajustar */
+    #promcard-placeholder {
+        overflow: hidden;
         height: auto;
         width: 100%;
         margin: auto;
-        ul{
+
+        ul {
             display: flex;
             padding: 0;
             width: 400%;
             animation: cambio 15s infinite alternate linear;
-            li{
+
+            li {
                 width: 100%;
                 position: relative;
                 list-style: none;
-                img{
+
+                img {
                     width: 100%;
                     height: 100%;
                 }
-                .promcard-description{
+
+                .promcard-description {
                     bottom: 0;
                     width: 100%;
                     position: absolute;
@@ -29,73 +36,83 @@ main{
         }
 
     }
-    .init-catalogue{
-        margin-top: 5vh;
-        padding: 0 0.5vw;
+
+    .init-catalogue {
         width: 100vw;
-        height:83vh;
         display: flex;
         overflow: hidden;
         flex-direction: column;
-        .init-catalogue-title{
+
+        .init-catalogue-title {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 10vh;
         }
-        .products-container{
+
+        .products-container {
             width: 100%;
             display: flex;
-            .product{
+
+            .product {
                 min-height: 100%;
-                min-width: 30%;
-                margin: 0 0.5%;
-                border-radius: 10px;
                 overflow: hidden;
-                .product-image-placeholder{
+
+                .product-image-placeholder {
+                    height: 73%;
                     display: flex;
                     align-items: center;
-                    height: 73%;
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                .product-description{
+
+                .product-description {
+                    font-size: 0.8rem;
                     min-height: 25%;
-                    padding: 5px 5px;
                     background-color: rgb(235, 222, 235);
+                    .price{
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
                 }
             }
         }
     }
-    #categories-placeholder{
+
+    #categories-placeholder {
         margin-top: 7vh;
         display: flex;
         flex-direction: column;
-        #categories-placeholder-div-one{
+
+        #categories-placeholder-div-one {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100vw;
             margin: 2vh 0;
         }
-        #categories-placeholder-div-two{
+
+        #categories-placeholder-div-two {
             width: 100vw;
             display: flex;
             gap: 3%;
             align-items: center;
             justify-content: center;
-            .categorie{
+
+            .categorie {
                 cursor: pointer;
                 width: 30%;
                 height: 85vh;
-                .categorie-image-placeholder{
+
+                .categorie-image-placeholder {
                     width: 100%;
                     height: 100%;
                 }
             }
-            .categorie-description{
+
+            .categorie-description {
                 position: relative;
                 z-index: 10;
                 bottom: 15.7%;
@@ -107,45 +124,68 @@ main{
             }
         }
     }
-    .categorie:hover{
+
+    .categorie:hover {
         transform: scale(1.01);
         transition: all 300ms;
     }
 }
 
 @keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
 
 
 
 
-@media(min-width: 1000px){
-    main{
-        #promcard-placeholder{
-            ul{
-                li{
-                    .promcard-description{
+@media(min-width: 1000px) {
+    main {
+        #promcard-placeholder {
+            ul {
+                li {
+                    .promcard-description {
                         justify-content: center;
                         height: 45%;
-                        p{
+
+                        p {
                             row-gap: 10px;
                             width: auto;
                             padding-top: 10px;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
-                            b{
+
+                            b {
                                 font-size: 1.8rem;
                             }
                         }
@@ -153,28 +193,60 @@ main{
                 }
             }
         }
-    }    
+
+        .init-catalogue {
+            margin-top: 5vh;
+            padding: 0 0.5vw;
+            height: 83vh;
+
+            .init-catalogue-title {
+                height: 10vh;
+            }
+
+            .products-container {
+                animation: 40s slide linear infinite;
+
+                .product {
+                    min-width: 30%;
+                    margin: 0 0.5%;
+                    border-radius: 10px;
+
+                    .product-description {
+                        position: relative;
+                        font-size: 1rem;
+                        padding: 5px 5px;
+                        .price{
+                            position: absolute;
+                            top: 5px;
+                            right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-
-@media(max-width: 1000px){
-    main{
-        #promcard-placeholder{
-            ul{
-                li{
-                    .promcard-description{
+@media(max-width: 1000px) {
+    main {
+        #promcard-placeholder {
+            ul {
+                li {
+                    .promcard-description {
                         height: 50%;
                         display: flex;
                         justify-content: center;
                         padding-top: 10px;
-                        p{
+
+                        p {
                             font-size: 0.7rem;
                             row-gap: 5px;
                             display: flex;
                             align-items: center;
                             justify-content: flex-start;
                             flex-direction: column;
-                            b{
+
+                            b {
                                 font-size: 1.4rem;
                             }
                         }
@@ -182,21 +254,57 @@ main{
                 }
             }
         }
-    }    
+
+        .init-catalogue {
+            height: 33vh;
+            margin-top: 1vh;
+            .init-catalogue-title{
+                height: 4vh;
+            }
+            .products-container {
+                animation: 40s slide3 linear infinite;
+                .product {
+                    min-width: 37%;
+                    max-width: 37%;
+                    height: 100%;
+                    margin: 0 0.5%;
+                    border-radius: 10px;
+
+                    .product-description {
+                        position: relative;
+                        display: flex;
+                        padding: 7px 7px;
+                        flex-direction: column;
+
+                        .price {
+                            position: absolute;
+                            align-self: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 
-@media(max-width: 500px){
-    main{
-        #promcard-placeholder{
-            ul{
-                li{
-                    .promcard-description{
+
+@media(max-width: 500px) {
+    main {
+        #promcard-placeholder {
+            height: 190px;
+
+            ul {
+                height: 100%;
+
+                li {
+                    .promcard-description {
                         height: 50%;
                         display: flex;
                         justify-content: center;
                         padding-top: 4px;
-                        p{
+
+                        p {
                             justify-content: flex-start;
                             height: 100%;
                             font-size: 0.7rem;
@@ -204,7 +312,8 @@ main{
                             display: flex;
                             align-items: center;
                             flex-direction: column;
-                            b{
+
+                            b {
                                 font-size: 1.2rem;
                             }
                         }
@@ -212,6 +321,72 @@ main{
                 }
             }
         }
-    }    
+
+        .init-catalogue {
+            margin-top: 1vh;
+            padding: 0 3vw;
+            height: 30vh;
+
+            .init-catalogue-title {
+                min-height: 6vh;
+            }
+
+            .products-container {
+                animation: 40s slide2 linear infinite;
+
+                .product {
+                    min-width: 45%;
+                    max-width: 45%;
+                    height: 22vh;
+                    margin: 0 0.5%;
+                    border-radius: 10px;
+
+                    .product-description {
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-size: 0.8rem;
+                        padding: 2px 5px;
+                        justify-content: space-between;
+
+                        .material,.description {
+                            display: none;
+                        }
+                        .price{
+                            font-size: 1.1em;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
 }
 
+
+
+
+
+/* .products-container {
+    animation: 40s slide3 linear infinite;
+
+    .product {
+        min-width: 37%;
+        max-width: 37%;
+        height: 33vh;
+        margin: 0 0.5%;
+        border-radius: 10px;
+
+        .product-description {
+            position: relative;
+            display: flex;
+            padding: 7px 7px;
+            flex-direction: column;
+
+            .price {
+                position: absolute;
+                align-self: flex-end;
+            }
+        }
+    }
+} */

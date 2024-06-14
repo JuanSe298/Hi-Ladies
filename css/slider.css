@@ -1,6 +1,3 @@
-.products-container{
-    animation: 40s slide linear infinite;
-}
 
 @keyframes slide {
     from {
@@ -8,5 +5,23 @@
     }
     to {
         transform: translateX(-240%);
+    }
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-405%);
+    }
+}
+
+@keyframes slide3 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-317%);
     }
 }
