@@ -327,8 +327,6 @@ main {
             margin-top: 1vh;
             padding: 0 3vw;
             min-height: 30%;
-            background-color: aqua;
-
             .init-catalogue-title {
                 min-height: 6vh;
             }
