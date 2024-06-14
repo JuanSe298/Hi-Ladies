@@ -43,13 +43,12 @@ header{
         padding: 0 5%;
         .titles-page{
             padding: 5px;
-            gap: 10px;
+            gap: 15px;
             .init-text{
                 height: 100%;
                 svg{
                     height: 70%;
                     width: 70%;
-                    margin-right: 2px;
                 }
             }
             .init-text:not(#search){
@@ -61,7 +60,7 @@ header{
             }
             #search{
                 input{
-                    height: 35%;
+                    height: 33%;
                     border-radius: 3px;
                     padding-left: 5px;
                 }
@@ -69,6 +68,44 @@ header{
         }
     }
 }
+
+@media(max-width:1000px){
+    header{
+        position: sticky;
+        top: 0;
+        width: 100vw; 
+        height: 6vh;
+        padding: 0 3%;
+        .titles-page{
+            gap: 10px;
+            .init-text{
+                height: 100%;
+                svg{
+                    height: 60%;
+                    width: 60%;
+                }
+            }
+            .init-text:not(#search){
+                cursor: pointer;
+            }
+            .init-text:hover:not(#search){
+                color: rgb(29, 27, 27);
+                transform: scale(1.02);
+            }
+            #search{
+                input{
+                    height: 28%;
+                    border-radius: 3px;
+                    padding-left: 5px;
+                    width: 120px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+
 
 @media(max-width: 500px){
     header{
