@@ -18,7 +18,7 @@ main {
         .product {
             cursor: pointer;
             background-color: beige;
-            overflow: scroll;
+            overflow: hidden;
 
             .images-container {
                 position: relative;
@@ -46,7 +46,7 @@ main {
             }
 
             .product-image-placeholder {
-                overflow-x: hidden;
+                overflow-x: scroll;
                 display: flex;
                 min-width: 100%;
                 height: 80%;
