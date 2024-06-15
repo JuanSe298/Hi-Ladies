@@ -220,7 +220,7 @@ footer{
 }
 
 
-@media(max-width:500px){
+@media(max-width:2000px){
     footer{ 
         font-size: 0.7rem;
         row-gap: 15px;
