@@ -17,6 +17,7 @@ $catalogo.addEventListener("click", function(event){
 
 const $flecha = document.querySelector(".svgback")
 $flecha.addEventListener("click", function(event){
+    console.log("hola")
     event.preventDefault();
     window.history.go(-1)
 }) 

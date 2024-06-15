@@ -54,6 +54,7 @@ main {
             display: flex;
 
             .product {
+                cursor: pointer;
                 min-height: 100%;
                 overflow: hidden;
 

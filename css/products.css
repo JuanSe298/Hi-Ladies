@@ -52,6 +52,8 @@ main {
 
         .svgback {
             position: absolute;
+            width: 2rem;
+            height: 2rem;
 
             svg {
                 width: 100%;
@@ -82,16 +84,16 @@ main {
         }
     }
 
-    /* .product2 {
+    .product2 {
+        width: 95%;
         background-color: white;
         position: relative;
         overflow: hidden;
         display: flex;
         border-radius: 10px;
-        height: 60%;
-        width: 95%;
 
         .svgback {
+            z-index: 10;
             position: absolute;
             width: 2rem;
             height: 2rem;
@@ -107,73 +109,27 @@ main {
             }
         }
 
-        .product-image-placeholder {
+        .images-container {
             position: relative;
             display: flex;
-            overflow-x: scroll;
-            height: 100%;
-            width: 70%;
             align-items: center;
-
-            .arrow {
-                height: 10%;
-                position: absolute;
-            }
-
-            .right {
-                left: 90%;
-            }
-
-            .left {
-                right: 90%;
-            }
-
-            #images-container {
-                display: flex;
-                height: 100%;
-                min-width: 100%;
-
-                img {
-                    height: 100%;
-                    object-fit: contain;
-                    width: 100%;
-                }
-            }
         }
 
 
         .product-description {
-            min-height: 5%;
-            padding: 5% 2%;
-            height: 100%;
-            width: 30%;
-
-            .brand {
-                height: 10%;
-                min-width: 100%;
-                font-size: 0.8rem;
-            }
 
             h2 {
-                height: 10%;
                 border-bottom: solid 1px black;
             }
 
             .general {
-                padding-top: 10%;
-                height: 60%;
-
-                p {
-                    padding-top: 5px;
-                }
 
                 .price {
                     color: gray;
-                    font-size: 1.3rem;
                 }
             }
         }
-    }*/
+    }
 }
 
 @media(min-width:1000px) {
@@ -207,10 +163,6 @@ main {
             border-radius: 10px;
             height: 60%;
 
-            .svgback {
-                width: 2rem;
-                height: 2rem;
-            }
 
             .product-image-placeholder {
                 height: 100%;
@@ -245,6 +197,69 @@ main {
                     .price {
                         font-size: 1.3rem;
 
+                    }
+                }
+            }
+        }
+        
+
+        .product2{
+            height: 70%;
+                .images-container{
+                height: 100%;
+                width: 70%;
+                .arrow{
+                    position: absolute;
+                    height: 10%;
+                }
+
+                .right {
+                    right: 5%;
+                }
+    
+                .left {
+                    left: 5%;
+                }
+                .product-image-placeholder{
+                    display: flex;
+                    overflow: hidden;
+                    height: 100%;
+                    min-width: 100%;
+                    .image-container {
+                        height: 100%;
+                        min-width: 100%;
+        
+                        img {
+                            height: 100%;
+                            object-fit: contain;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .product-description{
+                min-height: 100%;
+                padding: 5% 2%;
+                height: 100%;
+                width: 30%;
+                .brand {
+                    height: 10%;
+                    min-width: 100%;
+                    font-size: 0.8rem;
+                }
+                h2{
+                    height: 10%;
+                    border-bottom: solid 1px black;
+                }
+                .general{
+                    padding-top: 10%;
+                    height: 60%;
+    
+                    p {
+                        padding-top: 5px;
+                    }
+                    .price{
+                        font-size: 1.3rem;
                     }
                 }
             }
@@ -288,10 +303,7 @@ main {
             border-radius: 5px;
             height: 70%;
 
-            .svgback {
-                width: 2rem;
-                height: 2rem;
-            }
+
 
             .product-image-placeholder {
                 height: 70%;
@@ -313,7 +325,71 @@ main {
                 h2 {
                     display: flex;
                     align-items: center;
-                    width: 30%;
+                    width: 100%;
+                    height: 20%;
+                    border-bottom: solid 1px black;
+                }
+
+                .general {
+                    margin-top: 10px;
+                    height: 60%;
+
+                    p {
+                        padding-top: 5px;
+                    }
+
+                    .price {
+                        font-size: 1.3rem;
+
+                    }
+                }
+            }
+        }
+
+        .product2{
+            flex-direction: column;
+            border-radius: 5px;
+            height: 70%;
+            .images-container{
+                height: 70%;
+                width: 100%;
+                .arrow{
+                    display: none;
+                }
+                .product-image-placeholder{
+                    display: flex;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    height: 100%;
+                    min-width: 100%;
+                    .image-container {
+                        height: 100%;
+                        min-width: 100%;
+                        max-width: 100%;
+                        img {
+                            height: 100%;
+                            object-fit: contain;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .product-description {
+                min-height: 5%;
+                padding: 5% 2%;
+                height: 30%;
+                width: 100%;
+
+                .brand {
+                    height: 15%;
+                    width: 100%;
+                    font-size: 0.8rem;
+                }
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
                     height: 20%;
                     border-bottom: solid 1px black;
                 }
@@ -372,12 +448,6 @@ main {
             flex-direction: column;
             border-radius: 5px;
             height: 80%;
-
-            .svgback {
-                width: 2rem;
-                height: 2rem;
-            }
-
             .product-image-placeholder {
                 height: 67%;
                 width: 100%;
@@ -398,7 +468,7 @@ main {
                 h2 {
                     display: flex;
                     align-items: center;
-                    width: 50%;
+                    width: 100%;
                     height: 30%;
                     border-bottom: solid 1px black;
                 }
@@ -417,6 +487,71 @@ main {
                     }
                 }
             }
+        }
+
+
+        .product2{
+            flex-direction: column;
+            height: 80%;
+            .images-container{
+                height: 67%;
+                width: 100%;
+                .arrow{
+                    display: none;
+                }
+                .product-image-placeholder{
+                    display: flex;
+                    overflow-x: scroll;
+                    overflow-y: hidden;
+                    height: 100%;
+                    min-width: 100%;
+                    .image-container {
+                        height: 100%;
+                        min-width: 100%;
+                        max-width: 100%;
+                        img {
+                            height: 100%;
+                            object-fit: contain;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .product-description {
+                min-height: 10%;
+                padding: 2% 1%;
+                height: 30%;
+                width: 100%;
+
+                .brand {
+                    height: 10%;
+                    width: 100%;
+                    font-size: 0.7rem;
+                }
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    height: 30%;
+                    border-bottom: solid 1px black;
+                }
+
+                .general {
+                    font-size: 0.8em;
+                    margin-top: 10px;
+                    height: 60%;
+                    row-gap: 3px;
+                    p{
+                        padding-top: 0;
+                    }
+                    .price {
+                        font-size: 1.2rem;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        
         }
 
     }
