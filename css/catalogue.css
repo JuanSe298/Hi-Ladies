@@ -18,7 +18,7 @@ main {
         .product {
             cursor: pointer;
             background-color: beige;
-            overflow: hidden;
+            overflow: scroll;
 
             .images-container {
                 position: relative;
@@ -27,6 +27,7 @@ main {
                 align-items: center;
 
                 .arrow {
+                    display:none;
                     position: absolute;
                     height: 20%;
                     filter: invert(0.3);
