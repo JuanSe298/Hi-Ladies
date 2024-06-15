@@ -217,7 +217,7 @@ footer{
     footer{ 
         font-size: 0.7rem;
         row-gap: 15px;
-        margin-top: 5vh;
+        margin-top: 2vh;
         padding: 2vh 5% 2vh 5%;
         flex-wrap: wrap;
         align-items: center;

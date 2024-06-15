@@ -1,6 +1,6 @@
 main {
     background-image: url(https://img.freepik.com/vector-premium/corazones-estilo-minimalista-patrones-fisuras-fondo-dia-san-valentin-textura-decorativa-diseno_154156-7975.jpg);
-    height: 150vh;
+    min-height: 50vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -17,7 +17,6 @@ main {
     }
 
     #line {
-        margin-top: 2vh;
         background-color: black;
         width: 100%;
         height: 1px;
@@ -25,24 +24,19 @@ main {
 
     .general-description {
         background-color: rgba(255, 255, 255, 0.658);
-        height: 47vh;
         width: 100%;
-        padding: 10vh 0;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         p {
-            font-size: 1.2rem;
-            margin-top: 20px;
-
-            a {    
+            a {
                 text-decoration: none;
-                color: rgb(238, 106, 238);    
-                font-size: 1.2rem;
+                color: rgb(238, 106, 238);
 
             }
-            a:hover{
+
+            a:hover {
                 font-size: 1.25rem;
                 color: rgb(168, 25, 168);
             }
@@ -54,13 +48,11 @@ main {
         position: relative;
         overflow: hidden;
         display: flex;
-        border-radius: 10px;
-        height: 60%;
         width: 95%;
+
         .svgback {
             position: absolute;
-            width: 2rem;
-            height: 2rem;
+
             svg {
                 width: 100%;
                 height: 100%;
@@ -73,8 +65,6 @@ main {
         }
 
         .product-image-placeholder {
-            height: 100%;
-            width: 70%;
 
             img {
                 width: 100%;
@@ -84,38 +74,15 @@ main {
         }
 
         .product-description {
-            min-height: 5%;
-            padding: 5% 2%;
-            height: 100%;
-            width: 30%;
-
-            .brand {
-                height: 10%;
-                min-width: 100%;
-                font-size: 0.8rem;
-            }
-
-            h2 {
-                height: 10%;
-                border-bottom: solid 1px black;
-            }
-
             .general {
-                padding-top: 10%;
-                height: 60%;
-
-                p {
-                    padding-top: 5px;
-                }
-
                 .price {
                     color: gray;
-                    font-size: 1.3rem;
                 }
             }
         }
     }
-    .product2 {
+
+    /* .product2 {
         background-color: white;
         position: relative;
         overflow: hidden;
@@ -123,10 +90,12 @@ main {
         border-radius: 10px;
         height: 60%;
         width: 95%;
+
         .svgback {
             position: absolute;
             width: 2rem;
             height: 2rem;
+
             svg {
                 width: 100%;
                 height: 100%;
@@ -145,21 +114,26 @@ main {
             height: 100%;
             width: 70%;
             align-items: center;
-            .arrow{
+
+            .arrow {
                 height: 10%;
                 position: absolute;
             }
-            .right{
+
+            .right {
                 left: 90%;
             }
-            .left{
+
+            .left {
                 right: 90%;
             }
-            #images-container{
+
+            #images-container {
                 display: flex;
                 height: 100%;
                 min-width: 100%;
-                img{
+
+                img {
                     height: 100%;
                     object-fit: contain;
                     width: 100%;
@@ -199,5 +173,254 @@ main {
                 }
             }
         }
+    }*/
+}
+
+@media(min-width:1000px) {
+    main {
+        height: 150vh;
+
+        .general-title {
+            height: 10vh;
+            margin-bottom: 6vh;
+        }
+
+        #line {
+            margin-top: 2vh;
+        }
+
+        .general-description {
+            height: 47vh;
+            padding: 10vh 0;
+
+            p {
+                font-size: 1.2rem;
+                margin-top: 20px;
+
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .product {
+            border-radius: 10px;
+            height: 60%;
+
+            .svgback {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .product-image-placeholder {
+                height: 100%;
+                width: 70%;
+            }
+
+            .product-description {
+                min-height: 5%;
+                padding: 5% 2%;
+                height: 100%;
+                width: 30%;
+
+                .brand {
+                    height: 10%;
+                    min-width: 100%;
+                    font-size: 0.8rem;
+                }
+
+                h2 {
+                    height: 10%;
+                    border-bottom: solid 1px black;
+                }
+
+                .general {
+                    padding-top: 10%;
+                    height: 60%;
+
+                    p {
+                        padding-top: 5px;
+                    }
+
+                    .price {
+                        font-size: 1.3rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width:1000px) {
+    main {
+        height: 100vh;
+
+        .general-title {
+            height: 7vh;
+            margin-bottom: 5px;
+        }
+
+        #line {
+            background-color: black;
+            width: 100%;
+            height: 2px;
+        }
+
+        .general-description {
+            height: 23%;
+            padding: 2vh 20px;
+
+            p {
+                margin-top: 20px;
+
+                a {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+
+        .product {
+            flex-direction: column;
+            border-radius: 5px;
+            height: 70%;
+
+            .svgback {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .product-image-placeholder {
+                height: 70%;
+                width: 100%;
+            }
+
+            .product-description {
+                min-height: 5%;
+                padding: 5% 2%;
+                height: 30%;
+                width: 100%;
+
+                .brand {
+                    height: 15%;
+                    width: 100%;
+                    font-size: 0.8rem;
+                }
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    width: 30%;
+                    height: 20%;
+                    border-bottom: solid 1px black;
+                }
+
+                .general {
+                    margin-top: 10px;
+                    height: 60%;
+
+                    p {
+                        padding-top: 5px;
+                    }
+
+                    .price {
+                        font-size: 1.3rem;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:500px) {
+    main {
+        height: 80vh;
+
+        .general-title {
+            height: 5vh;
+            margin-bottom: 5px;
+        }
+
+        #line {
+            background-color: black;
+            width: 100%;
+            height: 2px;
+        }
+
+        .general-description {
+            font-size: 0.9em;
+            height: 20%;
+            padding: 2vh 20px;
+
+            p {
+                text-align: center;
+                margin-top: 10px;
+
+                a {
+                    font-size: 1.05rem;
+                }
+            }
+        }
+
+        .product {
+            flex-direction: column;
+            border-radius: 5px;
+            height: 80%;
+
+            .svgback {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            .product-image-placeholder {
+                height: 67%;
+                width: 100%;
+            }
+
+            .product-description {
+                min-height: 10%;
+                padding: 2% 1%;
+                height: 30%;
+                width: 100%;
+
+                .brand {
+                    height: 10%;
+                    width: 100%;
+                    font-size: 0.7rem;
+                }
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    width: 50%;
+                    height: 30%;
+                    border-bottom: solid 1px black;
+                }
+
+                .general {
+                    font-size: 0.8em;
+                    margin-top: 10px;
+                    height: 60%;
+                    row-gap: 3px;
+                    p{
+                        padding-top: 0;
+                    }
+                    .price {
+                        font-size: 1.2rem;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+    footer{
+        margin-top: 0;
     }
 }
